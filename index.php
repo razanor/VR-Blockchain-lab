@@ -7,9 +7,16 @@
      <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
      <script src="js/cursor-listener.js"></script>
      <script src="js/data.js"></script>
+     <link rel="stylesheet" href="css/preload.css">
 </head>
 <body>
-<a-scene>
+<div class="container">
+    <div class="dash uno"></div>
+    <div class="dash dos"></div>
+    <div class="dash tres"></div>
+    <div class="dash cuatro"></div>
+</div>
+<a-scene id="scene" visible="false" vr-mode-ui="enabled: false">
   <!-- Assets Management System -->
   <a-assets>
     <a-asset-item id="museum" src="museum.gltf"></a-asset-item>
@@ -297,5 +304,14 @@
     </a-cylinder>
 
 </a-scene>
+<script>
+    var scene = document.getElementById('scene');
+    var preload = document.getElementsByClassName('container')[0];
+    window.addEventListener('load', function () {
+        preload.style.display = 'none';
+        scene.setAttribute('visible', 'true');
+        scene.setAttribute('vr-mode-ui', 'enabled: true')
+    })
+</script>
 </body>
 </html>
