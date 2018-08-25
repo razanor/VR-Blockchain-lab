@@ -1,4 +1,5 @@
 "use strict";
+var flag = 0;
 
 AFRAME.registerComponent('cursor-english', {
     init: function () {
@@ -10,9 +11,10 @@ AFRAME.registerComponent('cursor-english', {
         		author.setAttribute('value', picAuthor[i]);
         		description.setAttribute('value', picDescription[i]);
         	}
-
         	el.children[0].setAttribute('color', "#0d082b");
         	document.getElementById("ukrainian").setAttribute("color", "#ffffff");
+        	document.getElementById("choose-lan").setAttribute('repeat', '0');
+        	flag = 1;
         });
     }
 });
@@ -29,18 +31,20 @@ AFRAME.registerComponent('cursor-ukrainian', {
             }
         	el.children[0].setAttribute('color', "#0d082b");
         	document.getElementById("english").setAttribute("color", "#ffffff");
+        	flag = 1;
         });
     }
 });
 
-AFRAME.registerComponent('cursor-leave', {
+AFRAME.registerComponent('cursor-close', {
     init: function () {
         var el = this.el;
-        el.addEventListener('mouseleave', function (evt) {
-            let index = el.children[0].getAttribute('id');
-            index = index.slice(6);
+        el.addEventListener('click', function (evt) {
+            let index = el.getAttribute('id');
+            index = index.slice(5);
             document.getElementById("author"+ index).setAttribute("visible", "false");
             document.getElementById("text"+ index).setAttribute("visible", "false");
+            el.setAttribute("visible", "false");
         });
     }
 });
@@ -48,11 +52,22 @@ AFRAME.registerComponent('cursor-leave', {
 AFRAME.registerComponent('cursor-enter', {
     init: function () {
         var el = this.el;
-        el.addEventListener('mouseenter', function (evt) {
+        el.addEventListener('click', function (evt) {
             let index = el.children[0].getAttribute('id');
             index = index.slice(6);
-            document.getElementById("author"+ index).setAttribute("visible", "true");
-            document.getElementById("text"+ index).setAttribute("visible", "true");
+            if (!isAnyVisible() && flag === 1) {
+                document.getElementById("author" + index).setAttribute("visible", "true");
+                document.getElementById("text" + index).setAttribute("visible", "true");
+                document.getElementById("close" + index).setAttribute("visible", "true");
+            }
         });
     }
 });
+
+function isAnyVisible() {
+    for (let i = 0; i < picAuthor.length ; i++) {
+        let close = document.getElementById("close"+ i).getAttribute("visible");
+        if (close === true) return true;
+    }
+    return false;
+}
