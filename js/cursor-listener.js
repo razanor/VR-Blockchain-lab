@@ -5,16 +5,16 @@ AFRAME.registerComponent('cursor-english', {
     init: function () {
         var el = this.el;
         el.addEventListener('click', function (evt) {
-        	for (let i = 0; i < picAuthor.length; i++) {
-        		let author = document.getElementById('author' + i);
-        		let description = document.getElementById('text' + i);
-        		author.setAttribute('value', picAuthor[i]);
-        		description.setAttribute('value', picDescription[i]);
-        	}
-        	el.children[0].setAttribute('color', "#0d082b");
-        	document.getElementById("ukrainian").setAttribute("color", "#ffffff");
-        	document.getElementById("choose-lan").setAttribute('repeat', '0');
-        	flag = 1;
+            for (let i = 0; i < picAuthor.length; i++) {
+                let author = document.getElementById('author' + i);
+                let description = document.getElementById('text' + i);
+                author.setAttribute('value', picAuthor[i]);
+                description.setAttribute('value', picDescription[i]);
+            }
+            el.children[0].setAttribute('color', "#0d082b");
+            document.getElementById("ukrainian").setAttribute("color", "#ffffff");
+            document.getElementById("choose-lan").setAttribute('repeat', '0');
+            flag = 1;
         });
     }
 });
@@ -23,15 +23,16 @@ AFRAME.registerComponent('cursor-ukrainian', {
     init: function () {
         var el = this.el;
         el.addEventListener('click', function (evt) {
-        	for (let i = 0; i < picAuthor.length; i++) {
+            for (let i = 0; i < picAuthor.length; i++) {
                 let author = document.getElementById('author' + i);
                 let description = document.getElementById('text' + i);
                 author.setAttribute('value', "Not yet!");
                 description.setAttribute('value',"Ukrainian will be here soon.");
             }
-        	el.children[0].setAttribute('color', "#0d082b");
-        	document.getElementById("english").setAttribute("color", "#ffffff");
-        	flag = 1;
+            el.children[0].setAttribute('color', "#0d082b");
+            document.getElementById("english").setAttribute("color", "#ffffff");
+            document.getElementById("choose-lan").setAttribute('repeat', '0');
+            flag = 1;
         });
     }
 });
@@ -55,7 +56,8 @@ AFRAME.registerComponent('cursor-enter', {
         el.addEventListener('click', function (evt) {
             let index = el.children[0].getAttribute('id');
             index = index.slice(6);
-            if (!isAnyVisible() && flag === 1) {
+            setVisibleToFalse();
+            if (flag === 1) {
                 document.getElementById("author" + index).setAttribute("visible", "true");
                 document.getElementById("text" + index).setAttribute("visible", "true");
                 document.getElementById("close" + index).setAttribute("visible", "true");
@@ -64,10 +66,10 @@ AFRAME.registerComponent('cursor-enter', {
     }
 });
 
-function isAnyVisible() {
+function setVisibleToFalse() {
     for (let i = 0; i < picAuthor.length ; i++) {
-        let close = document.getElementById("close"+ i).getAttribute("visible");
-        if (close === true) return true;
+        document.getElementById("close"+ i).setAttribute("visible", "false");
+        document.getElementById("author" + i).setAttribute("visible", "false");
+        document.getElementById("text" + i).setAttribute("visible", "false");
     }
-    return false;
 }

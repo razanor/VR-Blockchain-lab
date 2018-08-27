@@ -57,7 +57,7 @@
   <!-- Museum model -->
   <a-gltf-model src="#museum" position="-20.374 0 12.194" scale="0.9 0.9 0.9">
     <!-- Images collaction -->
-    <a-image src="#img0" width="3.448" height="5.172" position="15.918 3.483 -25.544" scale="1 1 1" cursor-enter>
+    <a-image src="#img0" width="3.448" height="5.172" position="15.918 3.483 -25.544" scale="1 1 1" side="front" cursor-enter>
              <a-text id="author0" visible="false" position="1.653 3.121 0"></a-text>
              <a-text id="text0" height="7" width="4" align="center" visible="false" position="3.798 0 0"></a-text>
     </a-image>
@@ -66,13 +66,16 @@
                        dur="1000"
                        fill="forwards"
                        to="0 0 360"
-                       repeat="indefinite"></a-animation>
+                       begin="mouseenter"
+                       end="mouseleave"
+                       repeat="indefinite"
+                        ></a-animation>
       </a-image>
-    <a-image src="#img1" width="3.448" height="5.172" position="23.685 3.483 -25.544" scale="1 1 1" cursor-enter>
+    <a-image src="#img1" width="3.448" height="5.172" position="23.685 3.483 -25.544" scale="1 1 1" side="front" cursor-enter>
              <a-text id="author0" visible="false" position="1.653 3.121 0"></a-text>
              <a-text id="text0" height="7" width="4" align="center" visible="false" position="3.798 0 0"></a-text>
     </a-image>
-    <a-image src="#img2" width="3.448" height="5.172" position="33.295 3.483 -25.544" scale="1 1 1" cursor-enter>
+    <a-image src="#img2" width="3.448" height="5.172" position="33.295 3.483 -25.544" scale="1 1 1" side="front" cursor-enter>
              <a-text id="author1" visible="false" position="2.018 2.573 0"></a-text>
              <a-text id="text1" height="7" width="4" align="center" visible="false" position="3.798 0 0"></a-text>
     </a-image>
@@ -81,9 +84,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 0 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img3" width="3.448" height="5.172" position="41.041 3.483 -25.544" scale="1 1 1" cursor-enter>
+    <a-image src="#img3" width="3.448" height="5.172" position="41.041 3.483 -25.544" scale="1 1 1" side="front" cursor-enter>
              <a-text id="author2" visible="false" position="-5.520 2.573 0"></a-text>
              <a-text id="text2" height="7" width="4" align="center" visible="false" position="-3.787 1.178 0"></a-text>
     </a-image>
@@ -92,9 +97,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 0 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img4" width="3.448" height="5.172" position="43.645 3.483 -22.579" scale="1 1 1" rotation="0 -90 0" cursor-enter>
+    <a-image src="#img4" width="3.448" height="5.172" position="43.645 3.483 -22.579" scale="1 1 1" rotation="0 -90 0" side="front" cursor-enter>
              <a-text id="author3" visible="false" position="3.727 3.125 0" align="center"></a-text>
              <a-text id="text3" height="7" width="4" align="center" visible="false" position="3.800 0.287 0"></a-text>
     </a-image>
@@ -103,9 +110,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -90 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img5" width="3.448" height="5.172" position="43.645 3.483 -15.028" scale="1 1 1" rotation="0 -90 0" cursor-enter>
+    <a-image src="#img5" width="3.448" height="5.172" position="43.645 3.483 -15.028" scale="1 1 1" rotation="0 -90 0" side="front" cursor-enter>
             <a-text id="author4" visible="false" position="2.666 2.573 0"></a-text>
             <a-text id="text4" height="7" width="4" align="center" visible="false" position="3.800 0.287 0"></a-text>
     </a-image>
@@ -114,9 +123,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -90 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img6" width="3.448" height="5.172" position="43.645 3.483 -7.482" scale="1 1 1" rotation="0 -90 0" cursor-enter>
+    <a-image src="#img6" width="3.448" height="5.172" position="43.645 3.483 -7.482" scale="1 1 1" rotation="0 -90 0" side="front" cursor-enter>
             <a-text id="author5" visible="false" position="-5.222 2.573 0"></a-text>
             <a-text id="text5" height="7" width="4" align="center" visible="false" position="-3.814 0.287 0"></a-text>
     </a-image>
@@ -125,9 +136,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -90 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img7" width="3.448" height="5.172" position="24.742 3.483 -1.849" scale="1 1 1" rotation="0 -180 0" cursor-enter>
+    <a-image src="#img7" width="3.448" height="5.172" position="24.742 3.483 -1.849" scale="1 1 1" rotation="0 -180 0" side="front" cursor-enter>
             <a-text id="author6" visible="false" position="-5.725 2.573 0"></a-text>
             <a-text id="text6" height="7" width="4" align="center" visible="false" position="-3.814 0.287 0"></a-text>
     </a-image>
@@ -136,9 +149,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -180 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img8" width="3.448" height="5.172" position="32.271 3.483 -1.849" scale="1 1 1" rotation="0 -180 0" cursor-enter>
+    <a-image src="#img8" width="3.448" height="5.172" position="32.271 3.483 -1.849" scale="1 1 1" rotation="0 -180 0" side="front" cursor-enter>
             <a-text id="author7" visible="false" position="-5.725 3.492 0"></a-text>
             <a-text id="text7" height="7" width="4" align="center" visible="false" position="-3.814 0.287 0"></a-text>
     </a-image>
@@ -147,9 +162,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -180 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img9" width="3.448" height="5.172" position="40.016 3.483 -1.849" scale="1 1 1" rotation="0 -180 0" cursor-enter>
+    <a-image src="#img9" width="3.448" height="5.172" position="40.016 3.483 -1.849" scale="1 1 1" rotation="0 -180 0" side="front" cursor-enter>
             <a-text id="author8" visible="false" position="2.379 3.492 0"></a-text>
             <a-text id="text8" height="7" width="4" align="center" visible="false" position="3.889 0.287 0"></a-text>
     </a-image>
@@ -158,9 +175,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -180 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img10" width="4.355" height="3.451" position="37.536 3.554 -26.781" scale="1 1 1" rotation="0 180 0" cursor-enter>
+    <a-image src="#img10" width="4.355" height="3.451" position="37.536 3.554 -26.781" scale="1 1 1" rotation="0 180 0" side="front" cursor-enter>
             <a-text id="author9" visible="false" position="2.508 2.816 0"></a-text>
             <a-text id="text9" height="7" width="4" align="center" visible="false" position="4.700 0.287 0"></a-text>
     </a-image>
@@ -169,9 +188,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -180 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img11" width="3.448" height="5.172" position="19.587 3.483 -50.767" scale="1 1 1" rotation="0 0 0" cursor-enter>
+    <a-image src="#img11" width="3.448" height="5.172" position="19.587 3.483 -50.767" scale="1 1 1" rotation="0 0 0" side="front" cursor-enter>
             <a-text id="author10" visible="false" position="-1.313 3.186 0"></a-text>
             <a-text id="text10" height="7" width="4" align="center" visible="false" position="4.083 0.287 0"></a-text>
     </a-image>
@@ -180,9 +201,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 0 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img12" width="3.448" height="5.172" position="36.846 3.483 -50.767" scale="1 1 1" rotation="0 0 0" cursor-enter>
+    <a-image src="#img12" width="3.448" height="5.172" position="36.846 3.483 -50.767" scale="1 1 1" rotation="0 0 0" side="front" cursor-enter>
             <a-text id="author11" visible="false" position="-2.047 3.186 0"></a-text>
             <a-text id="text11" height="7" width="4" align="center" visible="false" position="-3.922 0.287 0"></a-text>
     </a-image>
@@ -191,9 +214,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 0 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img13" width="4.355" height="3.451" position="19.414 3.554 -26.781" scale="1 1 1" rotation="0 180 0" cursor-enter>
+    <a-image src="#img13" width="4.355" height="3.451" position="19.414 3.554 -26.781" scale="1 1 1" rotation="0 180 0" side="front" cursor-enter>
             <a-text id="author12" visible="false" position="-5.690 2.816 0"></a-text>
             <a-text id="text12" height="7" width="4" align="center" visible="false" position="-4.556 0.287 0"></a-text>
     </a-image>
@@ -202,9 +227,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -180 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img14" width="3.448" height="5.172" position="43.645 3.663 -39.849" scale="1 1 1" rotation="0 -90 0" cursor-enter>
+    <a-image src="#img14" width="3.448" height="5.172" position="43.645 3.663 -39.849" scale="1 1 1" rotation="0 -90 0" side="front" cursor-enter>
             <a-text id="author13" visible="false" position="-6.057 3.300 0"></a-text>
             <a-text id="text13" height="7" width="4" align="center" visible="false" position="-3.794 0.287 0"></a-text>
     </a-image>
@@ -213,9 +240,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -90 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img15" width="3.448" height="5.172" position="43.645 3.663 -47.362" scale="1 1 1" rotation="0 -90 0" cursor-enter cursor-leave>
+    <a-image src="#img15" width="3.448" height="5.172" position="43.645 3.663 -47.362" scale="1 1 1" rotation="0 -90 0" side="front" cursor-enter>
             <a-text id="author14" visible="false" position="1.879 3.300 0"></a-text>
             <a-text id="text14" height="7" width="4" align="center" visible="false" position="3.736 0.287 0"></a-text>
     </a-image>
@@ -224,9 +253,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -90 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img16" width="3.448" height="5.172" position="43.645 3.663 -32.216" scale="1 1 1" rotation="0 -90 0" cursor-enter cursor-leave>
+    <a-image src="#img16" width="3.448" height="5.172" position="43.645 3.663 -32.216" scale="1 1 1" rotation="0 -90 0" side="front" cursor-enter>
             <a-text id="author15" visible="false" position="-6.065 3.300 0"></a-text>
             <a-text id="text15" height="7" width="4" align="center" visible="false" position="-3.794 0.287 0"></a-text>
     </a-image>
@@ -235,9 +266,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -90 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img17" width="3.448" height="5.172" position="13.281 3.663 -29.804" scale="1 1 1" rotation="0 90 0" cursor-enter cursor-leave>
+    <a-image src="#img17" width="3.448" height="5.172" position="13.281 3.663 -29.804" scale="1 1 1" rotation="0 90 0" side="front" cursor-enter>
             <a-text id="author16" visible="false" position="1.658 3.300 0"></a-text>
             <a-text id="text16" height="7" width="4" align="center" visible="false" position="3.769 0.287 0"></a-text>
     </a-image>
@@ -246,9 +279,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -90 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img18" width="3.448" height="5.172" position="13.281 3.663 -45.336" scale="1 1 1" rotation="0 90 0" cursor-enter cursor-leave>
+    <a-image src="#img18" width="3.448" height="5.172" position="13.281 3.663 -45.336" scale="1 1 1" rotation="0 90 0" side="front" cursor-enter>
             <a-text id="author17" visible="false" position="-5.537 3.300 0"></a-text>
             <a-text id="text17" height="7" width="4" align="center" visible="false" position="-3.949 -0.046 0"></a-text>
     </a-image>
@@ -257,9 +292,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -90 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img19" width="3.448" height="5.172" position="13.281 3.663 -37.472" scale="1 1 1" rotation="0 90 0" cursor-enter cursor-leave>
+    <a-image src="#img19" width="3.448" height="5.172" position="13.281 3.663 -37.472" scale="1 1 1" rotation="0 90 0" side="front" cursor-enter>
             <a-text id="author18" visible="false" position="-5.309 3.300 0"></a-text>
             <a-text id="text18" height="7" width="4" align="center" visible="false" position="-3.794 0.287 0"></a-text>
     </a-image>
@@ -268,9 +305,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -90 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img20" width="3.448" height="5.172" position="20.521 3.554 -51.904" scale="1 1 1" rotation="0 180 0" cursor-enter cursor-leave>
+    <a-image src="#img20" width="3.448" height="5.172" position="20.521 3.554 -51.904" scale="1 1 1" rotation="0 180 0" side="front" cursor-enter>
             <a-text id="author19" visible="false" position="-5.859 3.300 0"></a-text>
             <a-text id="text19" height="7" width="4" align="center" visible="false" position="-3.794 0.287 0"></a-text>
     </a-image>
@@ -279,9 +318,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -180 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img21" width="3.448" height="5.172" position="40.866 3.554 -51.904" scale="1 1 1" rotation="0 180 0" cursor-enter cursor-leave>
+    <a-image src="#img21" width="3.448" height="5.172" position="40.866 3.554 -51.904" scale="1 1 1" rotation="0 180 0" side="front" cursor-enter>
             <a-text id="author20" visible="false" position="1.812 3.300 0"></a-text>
             <a-text id="text20" height="7" width="4" align="center" visible="false" position="3.837 0.287 0"></a-text>
     </a-image>
@@ -290,9 +331,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -180 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img22" width="3.448" height="5.172" position="33.155 3.554 -51.904" scale="1 1 1" rotation="0 180 0" cursor-enter cursor-leave>
+    <a-image src="#img22" width="3.448" height="5.172" position="33.155 3.554 -51.904" scale="1 1 1" rotation="0 180 0" side="front" cursor-enter>
             <a-text id="author21" visible="false" position="-5.369 3.300 0"></a-text>
             <a-text id="text21" height="7" width="4" align="center" visible="false" position="-3.848 0.287 0"></a-text>
     </a-image>
@@ -301,9 +344,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -180 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img23" width="3.448" height="5.172" position="43.645 3.663 -58.223" scale="1 1 1" rotation="0 -90 0" cursor-enter cursor-leave>
+    <a-image src="#img23" width="3.448" height="5.172" position="43.645 3.663 -58.223" scale="1 1 1" rotation="0 -90 0" side="front" cursor-enter>
             <a-text id="author22" visible="false" position="-7.165 3.300 0"></a-text>
             <a-text id="text22" height="7" width="4" align="center" visible="false" position="-5.009 0.287 0"></a-text>
     </a-image>
@@ -312,9 +357,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -90 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img24" width="3.448" height="5.172" position="43.645 3.663 -68.077" scale="1 1 1" rotation="0 -90 0" cursor-enter cursor-leave>
+    <a-image src="#img24" width="3.448" height="5.172" position="43.645 3.663 -68.077" scale="1 1 1" rotation="0 -90 0" side="front" cursor-enter>
             <a-text id="author23" visible="false" position="3.430 3.300 0"></a-text>
             <a-text id="text23" height="7" width="4" align="center" visible="false" position="4.744 0.287 0"></a-text>
     </a-image>
@@ -323,9 +370,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -90 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img25" width="3.448" height="5.172" position="13.281 3.663 -70.035" scale="1 1 1" rotation="0 90 0" cursor-enter cursor-leave>
+    <a-image src="#img25" width="3.448" height="5.172" position="13.281 3.663 -70.035" scale="1 1 1" rotation="0 90 0" side="front" cursor-enter>
             <a-text id="author24" visible="false" position="-6.155 3.300 0"></a-text>
             <a-text id="text24" height="7" width="4" align="center" visible="false" position="-3.930 0.287 0"></a-text>
     </a-image>
@@ -334,9 +383,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -90 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img26" width="3.448" height="5.172" position="17.226 3.483 -73.700" scale="1 1 1" rotation="0 0 0" cursor-enter cursor-leave>
+    <a-image src="#img26" width="3.448" height="5.172" position="17.226 3.483 -73.700" scale="1 1 1" rotation="0 0 0" side="front" cursor-enter>
             <a-text id="author25" visible="false" position="2.814 3.300 0"></a-text>
             <a-text id="text25" height="7" width="4" align="center" visible="false" position="4.220 0.287 0"></a-text>
     </a-image>
@@ -345,9 +396,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 0 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img27" width="3.448" height="5.172" position="13.281 3.663 -62.228" scale="1 1 1" rotation="0 90 0" cursor-enter cursor-leave>
+    <a-image src="#img27" width="3.448" height="5.172" position="13.281 3.663 -62.228" scale="1 1 1" rotation="0 90 0" side="front" cursor-enter>
             <a-text id="author26" visible="false" position="-5.351 3.672 0"></a-text>
             <a-text id="text26" height="7" width="4" align="center" visible="false" position="-3.843 0.102 0"></a-text>
     </a-image>
@@ -356,9 +409,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -90 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img28" width="3.448" height="5.172" position="13.281 3.663 -54.520" scale="1 1 1" rotation="0 90 0" cursor-enter cursor-leave>
+    <a-image src="#img28" width="3.448" height="5.172" position="13.281 3.663 -54.520" scale="1 1 1" rotation="0 90 0" side="front" cursor-enter>
             <a-text id="author26" visible="false" position="-5.351 3.672 0"></a-text>
             <a-text id="text26" height="7" width="4" align="center" visible="false" position="-3.843 0.102 0"></a-text>
     </a-image>
@@ -367,9 +422,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 -90 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img29" width="3.448" height="5.172" position="25.738 3.483 -73.700" scale="1 1 1" rotation="0 0 0" cursor-enter cursor-leave>
+    <a-image src="#img29" width="3.448" height="5.172" position="25.738 3.483 -73.700" scale="1 1 1" rotation="0 0 0" side="front" cursor-enter>
             <a-text id="author27" visible="false" position="-6.417 3.300 0"></a-text>
             <a-text id="text27" height="7" width="4" align="center" visible="false" position="-4.309 0.287 0"></a-text>
     </a-image>
@@ -378,9 +435,11 @@
                        dur="1000"
                        fill="forwards"
                        to="0 0 360"
+                       begin="mouseenter"
+                       end="mouseleave"
                        repeat="indefinite"></a-animation>
       </a-image>
-    <a-image src="#img30" width="3.448" height="5.172" position="35.336 3.483 -73.700" scale="1 1 1" rotation="0 0 0" cursor-enter cursor-leave>
+    <a-image src="#img30" width="3.448" height="5.172" position="35.336 3.483 -73.700" scale="1 1 1" rotation="0 0 0" side="front" cursor-enter>
             <a-text id="author28" visible="false" position="-6.705 3.300 0"></a-text>
             <a-text id="text28" height="7" width="4" align="center" visible="false" position="-4.748 0.287 0"></a-text>
     </a-image>
@@ -402,9 +461,14 @@
     <a-plane cursor-ukrainian opacity="0" position="13.307 4.315 -9.841" rotation="0 90 0" width="1.7">
       <a-text id="ukrainian" value="Ukrainian" position="-0.758 0 0" width="8"></a-text>
     </a-plane>
-    <a-plane cursor-english opacity="0" position="13.307 4.315 -14.597" rotation="0 90 0" width="1.7">
+    <a-plane cursor-english opacity="0" position="13.307 4.315 -15.031" rotation="0 90 0" width="1.7">
       <a-text id="english" value="English" position="-0.758 0 0" width="8"></a-text>
     </a-plane>
+      <a-cylinder radius="0.3" height="0.06" position="13.222 0.937 -10.081" color="#351252" rotation="0 0 90"></a-cylinder>
+      <a-text value=" - click to move around" width="6" position="13.281 0.982 -10.538" rotation="0 90 0"></a-text>
+      <a-text value=" - click on image to see description" width="6" position="13.281 1.727 -10.538" rotation="0 90 0"></a-text>
+      <a-image src="#img1" width="3.448" height="5.172" position="13.230 1.735 -10.106" scale="0.130 0.130 0.130" side="front" rotation="0 90 0"></a-image>
+
     </a-gltf-model>
 
   <!-- Sky primitive -->
